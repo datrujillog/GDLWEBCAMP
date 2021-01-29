@@ -112,6 +112,33 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/**Globales**/
+
+.contenedor {
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 480px) {
+    .contenedor {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contenedor {
+        width: 90%;
+        max-width: 1100px;
+    }
+}
+
 h2 {
     font-family: 'Oswald', sans-serif;
 }
@@ -172,6 +199,8 @@ div.informacion-envento p {
 
 div.informacion-envento p i {
     color: #fe4918;
+    font-size: 2em;
+    margin-right: 10px;
 }
 
 p.fecha {
@@ -184,7 +213,7 @@ p.ciudad {
 }
 
 p.slogan {
-    text-transform: none!important;
+    text-transform: none !important;
     line-height: 2;
 }
 
@@ -208,6 +237,13 @@ h1.nombre-sitio {
 
 nav.nombre-sitio:last-child {
     margin-right: 0;
+}
+
+
+/**Barra**/
+
+div.barra {
+    color: #353535;
 }
 
 
@@ -338,10 +374,10 @@ nav.nombre-sitio:last-child {
         text-decoration: underline;
     }
     a[href]::after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
     }
     abbr[title]::after {
-        content: " (" attr(title) ")";
+        content: " ("attr(title) ")";
     }
     /*
    * Don't show links that are fragment identifiers,
